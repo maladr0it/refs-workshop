@@ -1,24 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+
+import ClearableInput from "./exercises/clearable-input";
+import ScrollableTabs from "./exercises/scrollable-tabs";
+import ScrollToOffscreen from "./exercises/scroll-to-offscreen";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <hr />
+      <h2>Clearable Input</h2>
+      <ClearableInput />
+      <hr />
+      <h2>Scrollable Tabs</h2>
+      <ScrollableTabs />
+      <hr />
+      <h3>Scroll To Errors</h3>
+      <ScrollToOffscreen />
     </div>
   );
 }

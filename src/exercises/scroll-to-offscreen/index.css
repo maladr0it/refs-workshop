@@ -1,0 +1,11 @@
+.scroll-to-offscreen {
+  max-width: 30rem;
+  line-height: 1.5;
+  color: #ccc;
+}
+
+.scroll-to-offscreen__error-item {
+  background: tomato;
+  color: black;
+  padding: 2rem;
+}

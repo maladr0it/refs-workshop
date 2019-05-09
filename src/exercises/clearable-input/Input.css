@@ -1,0 +1,35 @@
+.clearable-input__container {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+}
+
+.clearable-input__label {
+  font-weight: bold;
+  margin-right: 0.25rem;
+}
+
+.clearable-input__input {
+  outline: none;
+  padding: 0.5rem 1.2rem 0.5rem 0.5rem;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.clearable-input__input:focus {
+  border-color: #1497ff;
+}
+
+.clearable-input__clear-button {
+  position: absolute;
+  font-weight: bold;
+  font-size: 0.75rem;
+  width: 1em;
+  padding: 0;
+  background: none;
+  right: calc(0.5rem + 2px);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

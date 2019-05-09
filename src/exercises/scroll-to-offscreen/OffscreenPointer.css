@@ -1,0 +1,41 @@
+.offscreen-pointer__button-container {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  left: 0;
+  visibility: hidden;
+}
+
+.offscreen-pointer__button-container--up {
+  top: 0.5rem;
+  visibility: visible;
+}
+
+.offscreen-pointer__button-container--down {
+  bottom: 0.5rem;
+  visibility: visible;
+}
+
+@keyframes pop {
+  from {
+    transform: scale(1.05);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.offscreen-pointer__button {
+  font-size: 0.86rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 999px;
+  background: #ffe7e6;
+  color: #db183f;
+  box-shadow: 0 2px 2px rgba(1, 1, 1, 0.3);
+  cursor: pointer;
+  animation: 0.07s pop ease-in;
+}
